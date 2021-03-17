@@ -10,46 +10,21 @@ using RandomForest for detecting Parkinson Disease
 > you can see the sample of dataset as below :
 >
 ![sampledataset](https://user-images.githubusercontent.com/53394692/111483162-cc9aee00-8749-11eb-8c84-2a73caf4af36.PNG)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+>
+## STRUCTURE of This Project
+> Our `dataset` directory  is first broken down into `spiral` and `wave` . Each of those folders is further split into `testing` and `training` . Finally our images reside in `healthy` or `parkinson`  folders.
+>
+> for running algorithms,we use `detect_parkinsons.py` file,and run it by following command:
+```
+python detect_parkinsons.py --dataset dataset/spiral
+or
+python detect_parkinsons.py --dataset dataset/wave
+```
+> after training by `wave` immage dataset,you see result basis on `test` dataset as below:
+> 
+![result](https://user-images.githubusercontent.com/53394692/111487360-89db1500-874d-11eb-9c91-5c2a13972e29.PNG)
+>
+> furthermore,you see results of test dataset,basis on training on `Spiral` iamge dataset.
 
 ## License
 > [Detecting Parkinson’s Disease with OpenCV, Computer Vision, and the Spiral/Wave Test](https://www.pyimagesearch.com/2019/04/29/detecting-parkinsons-disease-with-opencv-computer-vision-and-the-spiral-wave-test/) by Adrian Rosebrock
